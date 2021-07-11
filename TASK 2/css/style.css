@@ -1,0 +1,21 @@
+body {
+    font-family: 'Newsreader', serif;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container {
+    width: 1479px;
+    height: 1250px;
+    border: 3px solid white;
+    margin: 10px auto;
+}
+
+.details {
+    margin: 12px 9px;
+    padding: 12px 5px;
+}
