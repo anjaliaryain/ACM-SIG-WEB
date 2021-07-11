@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRETTIFY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Charmonman', cursive;
+            color: black;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            margin: -26px 3px;
+            padding: 3px 3px;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            margin: -13px;
+            padding: 10px;
+        }
+        
+        .navbar {
+            color: black;
+            display: flex;
+            margin: 13px 3px;
+            padding: 3px 3px;
+            height: 30px;
+            width: 97vw;
+            border: 2px solid black;
+            border-left: none;
+            border-right: none;
+            justify-content: center;
+            position: sticky;
+        }
+        
+        .active {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        
+        .item {
+            margin: -4px 41px;
+            padding: 4px 5px;
+        }
+        
+        .pretty {
+            background-image: url("photos/trend10.jpeg");
+            height: 550px;
+            width: 98vw;
+            background-attachment: fixed;
+            background-position: top;
+            color: white;
+        }
+        
+        .text {
+            float: right;
+            font-size: 66px;
+        }
+        
+        #first {
+            margin: 41px 15px;
+            padding: 13px 0px;
+        }
+        
+        #second {
+            margin: 155px -506px;
+            padding: 23px 0px;
+        }
+        /* body {
+            margin: 40px; */
+        
+        .wrapper {
+            margin: 10px -3px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(4, [col] 370px);
+            grid-template-rows: repeat(2, [row] 500px);
+            background-color: white;
+            color: #212020;
+        }
+        
+        .box {
+            background-color: #212020;
+            color: white;
+            border-radius: 5px;
+            padding: 20px;
+            /* font-size: 40px; */
+        }
+        
+        .box h1 {
+            text-align: left;
+            margin: -21px -7px;
+            padding: 3px 3px;
+            font-size: 40px;
+        }
+        
+        .box p {
+            float: right;
+            margin-top: -512px;
+            margin-left: 280px;
+            padding: 3px 3px;
+        }
+        
+        .box img {
+            margin: 58px -10px;
+            padding: 3px 3px;
+            transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+            filter: blur(2px);
+            opacity: 0.5;
+            transition: 0.6s ease all;
+        }
+        
+        .box img:hover {
+            transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
+            filter: blur(0);
+            opacity: 1;
+        }
+        
+        .box .box {
+            background-color: #ccc;
+            color: #444;
+        }
+        
+        .a {
+            grid-column: col / span 2;
+            grid-row: row;
+        }
+        
+        .b {
+            grid-column: col 3 / span 2;
+            grid-row: row;
+        }
+        
+        .b p {
+            float: right;
+            margin-top: -512px;
+            margin-left: 280px;
+            padding: 3px 3px;
+        }
+        
+        .b img {
+            margin: 58px -10px;
+            padding: 3px 3px;
+        }
+        
+        .c {
+            grid-column: col / span 2;
+            grid-row: row 2;
+        }
+        
+        .c p {
+            float: right;
+            margin-top: -512px;
+            margin-left: 280px;
+            padding: 3px 3px;
+        }
+        
+        .c img {
+            margin: 58px -10px;
+            padding: 3px 3px;
+        }
+        
+        .d {
+            grid-column: col 3 / span 2;
+            grid-row: row 2;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .d h {
+            border: 3px solid black;
+        }
+        
+        .e {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+        
+        .e p {
+            font-size: 20px;
+        }
+        
+        .f {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        
+        .g {
+            grid-column: 2;
+            grid-row: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PRETTIFY</h1>
+
+    <div class="mydiv">
+
+
+        <nav class="navbar">
+
+            <div class="item" id="item1">
+                <a href="#" class="active"> Home </a>
+            </div>
+            <div class="item" id="item2">
+                <a href="#" class="active">What's New</a>
+            </div>
+            <div class="item" id="item3">
+                <a href="#" class="active"> Accessories </a>
+            </div>
+            <div class="item" id="item4">
+                <a href="#" class="active"> Brands </a>
+            </div>
+
+
+        </nav>
+    </div>
+    <div class="pretty">
+        <div class="text" id="first">
+            <p>Beauty has a purpose,</p>
+        </div>
+        <div class="text" id="second">
+            <p>and purpose is you</p>
+
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="box a">
+            <h1>MAKEUP <br> PRODUCTS</h1>
+            <img src="./photos/makeup.jpeg" alt="makeup" height="250px" width="250px">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur expedita ducimus ex cupiditate corrupti quas natus, velit, unde asperiores veniam dignissimos quaerat beatae sequi maxime alias reiciendis porro ullam. Rerum facere perferendis
+                asperiores eligendi harum quibusdam numquam? Fugit, fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quae quia doloribus necessitatibus magnam iste odio asperiores laborum iusto, beatae debitis repellat molestiae
+                assumenda? Ipsam consequuntur, placeat consectetur aut omnis iure distinctio quam temporibus reiciendis. Enim vero ipsa pariatur eveniet sed sunt, culpa perspiciatis odio tempora, voluptatibus corporis aperiam accusamus Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Corrupti reiciendis assumenda a, ex illo ipsum autem totam nobis voluptatem enim excepturi nisi maiores tenetur? Sequi alias provident minima excepturi sapiente eos aperiam nesciunt ita</p>
+        </div>
+        <div class="box b">
+            <h1>HAIRCARE <br> PRODUCTS</h1>
+            <img src="./photos/hair.jpeg" alt="hair" height="250px" width="250px">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur expedita ducimus ex cupiditate corrupti quas natus, velit, unde asperiores veniam dignissimos quaerat beatae sequi maxime alias reiciendis porro ullam. Rerum facere perferendis
+                asperiores eligendi harum quibusdam numquam? Fugit, fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quae quia doloribus necessitatibus magnam iste odio asperiores laborum iusto, beatae debitis repellat molestiae
+                assumenda? Ipsam consequuntur, placeat consectetur aut omnis iure distinctio quam temporibus reiciendis. Enim vero ipsa pariatur eveniet sed sunt, culpa perspiciatis odio tempora, voluptatibus corporis aperiam accusamus Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Corrupti reiciendis assumenda a, ex illo ipsum autem totam nobis voluptatem enim excepturi nisi maiores tenetur? Sequi alias provident minima excepturi sapiente eos aperiam nesciunt ita
+            </p>
+        </div>
+        <div class="box c">
+            <h1>SKINCARE <br> PRODUCTS</h1>
+
+            <img src="./photos/skin.jpeg" alt="skin" height="250px" width="250px">
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur expedita ducimus ex cupiditate corrupti quas natus, velit, unde asperiores veniam dignissimos quaerat beatae sequi maxime alias reiciendis porro ullam. Rerum facere
+                perferendis asperiores eligendi harum quibusdam numquam? Fugit, fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quae quia doloribus necessitatibus magnam iste odio asperiores laborum iusto, beatae debitis repellat
+                molestiae assumenda? Ipsam consequuntur, placeat consectetur aut omnis iure distinctio quam temporibus reiciendis. Enim vero ipsa pariatur eveniet sed sunt, culpa perspiciatis odio tempora, voluptatibus corporis aperiam accusamus Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Corrupti reiciendis assumenda a, ex illo ipsum autem totam nobis voluptatem enim excepturi nisi maiores tenetur? Sequi alias provident minima excepturi sapiente eos aperiam nesciunt ita</p>
+        </div>
+        <div class="box d">
+            <div class="box e">
+                <h>BLOGS</h>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit sed ratione eaque ad, cumque officia veritatis tempore odio consequatur repellat reiciendis amet minus vel dignissimos quaerat deleniti in optio odit dolores laudantium? Aliquid magnam
+                    libero harum, error nemo voluptas.
+                </p>
+            </div>
+            <div class="box f">
+                <h>RATE</h>
+            </div>
+            <div class="box g">
+                <h>LEARN</h>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
