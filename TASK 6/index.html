@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+
+
+<body>
+    Q-1. WAP IN JS TO CHECK THE GIVEN YEAR IS LEAP YEAR.
+
+    <input type="number" name="" id="number">
+    <button onclick="demo()">Click</button>
+    <script>
+        function demo() {
+            var year = document.getElementById("number").value;
+
+            if (year % 4 == 0)
+                window.alert("Leap Year");
+
+            else if (year % 100 == 0)
+                window.alert(" Not a Leap Year");
+
+            else if (year % 400 == 0)
+                window.alert("Leap Year");
+
+            else
+                window.alert("Not a Leap Year");
+        }
+    </script>
+
+    <br><br> Q-2. WAP IN JS FOR PERFORMING ARITHMETIC OPERATION ON 2 NUMBERS ACCORDING TO INPUT OPERATOR.
+
+
+    <form name="myform">
+        <input type="text" name="first"><br><br>
+        <input type="text" name="second"><br><br>
+        <input type="button" name="" value="ADD" onclick="add()">
+        <input type="button" name="" value="SUBTRACT" onclick="subtract()">
+        <input type="button" name="" value="MULTIPLY" onclick="multiply()">
+        <input type="button" name="" value="DIVIDE" onclick="divide()">
+        <br><br>
+        <input type="text" name="result">
+    </form>
+    <script>
+        function add() {
+            first = parseInt(myform.first.value);
+            second = parseInt(myform.second.value);
+            result = first + second;
+            myform.result.value = result;
+        }
+
+        function subtract() {
+            first = parseInt(myform.first.value);
+            second = parseInt(myform.second.value);
+            result = first - second;
+            myform.result.value = result;
+
+        }
+
+        function multiply() {
+            first = parseInt(myform.first.value);
+            second = parseInt(myform.second.value);
+            result = first * second;
+            myform.result.value = result;
+
+        }
+
+        function divide() {
+            first = parseInt(myform.first.value);
+            second = parseInt(myform.second.value);
+            result = first / second;
+            myform.result.value = result;
+
+        }
+    </script>
+    <br> <br> Q-3. WAP IN JS TO PASS A FUNCTION AS PARAMETER.
+    <br> <br>
+
+    <script>
+        function display(name) {
+            document.write(name);
+        }
+        display("Anjali Arya");
+    </script>
+    <br><br> Q-4. WAP IN JS TO MERGE TWO ARRAYS AND REMOVE DEUPLICATE ITEMS.
+    <script>
+        let array1 = ["Dog", "Cat", "Cow", "Horse", "Lion"],
+            array2 = ["Fish", "Sea Horse", "Turtle", "Whale", "Dolphin"];
+
+        // let arrayNew = [...array1, ...array2];
+        let set = new Set([...array1, ...array2]);
+
+        let arrayNew = [...set];
+    </script>
+
+
+</body>
+
+
+
+
+</html>
